@@ -36,7 +36,7 @@ npm install
 -->
 
 ## Features
-Features are currently being discussed so except changes, here's a list of features agreed upon:
+Features are currently being discussed so expect changes, here's a list of features agreed upon:
 - Reviews per episodes
 - Reviews per podcasts based on the average score of its episodes which are based themselves on criterias
 - Account management
@@ -53,10 +53,9 @@ Coming soon
 
 ## Built with
 Currently considering the following:
-- [Shopify API](https://ru.shopify.com/partners/blog/topics/shopify-api) - Powerful tool that let's you offer enhanced solutions to your Shopify clients.
+- [Spotify Web API](https://developer.spotify.com/community/news/spotify-web-api/) - Fetch data from Spotify.
 - [Node.js](https://nodejs.org/) - JavaScript runtime environment that executes JavaScript code outside a web browser.
 - [Docker](https://www.docker.com/) - set of platform as a service (PaaS) products that uses OS-level virtualization to deliver software in packages called containers.
-
 - [MongoDB](https://www.mongodb.com/) - document database with the scalability and flexibility that you want with the querying and indexing that you need.
 
 ## Contributing
