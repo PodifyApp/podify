@@ -43,6 +43,14 @@ Features are currently being discussed so expect changes, here's a list of featu
 - Widget player
 - Profiles for each host
 - Podcasts categories
+- Recommendation system based on user
+- Social networks integration
+- Weekly for you
+- Podcast of the month and rising Podcast
+- Charts and maps for stats
+- Blog
+- Online chat
+- Unique theme based on the account preferences
 
 <!--## Usage-->
 
@@ -53,17 +61,19 @@ Coming soon
 
 ## Built with
 Currently considering the following:
-- [Spotify Web API](https://developer.spotify.com/community/news/spotify-web-api/) - Fetch data from Spotify.
+- [Podcast APIs](https://developer.spotify.com/community/news/2020/03/20/introducing-podcasts-api/) - Fetch data from Spotify.
 - [Node.js](https://nodejs.org/) - JavaScript runtime environment that executes JavaScript code outside a web browser.
 - [Docker](https://www.docker.com/) - set of platform as a service (PaaS) products that uses OS-level virtualization to deliver software in packages called containers.
 - [MongoDB](https://www.mongodb.com/) - document database with the scalability and flexibility that you want with the querying and indexing that you need.
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+- For the APIs we decided to focus start on Spotify and add more
 
 ## Contributing
 Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for more details of how to report a bug and file a pull request.
 
 ## Team
-| [<img src="https://github.com/AmineAML.png" width="100%;"/><br /><sub><b>Amine</b></sub>](https://github.com/AmineAML)<br />        | [<img src="https://github.com/stefanspiridon.png" width="100%;"/><br /><sub><b>Stefan</b></sub>](https://github.com/stefanspiridon)<br />        | [<img src="https://github.com/JarlTetrazepam.png" width="100%;"/><br /><sub><b>Paul</b></sub>](https://github.com/JarlTetrazepam)<br />        | [<img src="https://github.com/Deni-Khalikov.png" width="90%;"/><br /><sub><b>Deni</b></sub>](https://github.com/Deni-Khalikov)<br />        | [<img src="https://github.com/abdessamadhamzaoui.png" width="100%;"/><br /><sub><b>Abdessamad</b></sub>](https://github.com/abdessamadhamzaoui)<br />             |
-|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| [<img src="https://github.com/AmineAML.png" width="100%;"/><br /><sub><b>Amine</b></sub>](https://github.com/AmineAML)<br />        | [<img src="https://github.com/stefanspiridon.png" width="100%;"/><br /><sub><b>Stefan</b></sub>](https://github.com/stefanspiridon)<br />        | [<img src="https://github.com/JarlTetrazepam.png" width="100%;"/><br /><sub><b>Paul</b></sub>](https://github.com/JarlTetrazepam)<br />        | [<img src="https://github.com/Deni-Khalikov.png" width="90%;"/><br /><sub><b>Deni</b></sub>](https://github.com/Deni-Khalikov)<br />        | [<img src="https://github.com/abdessamadhamzaoui.png" width="100%;"/><br /><sub><b>Abdessamad</b></sub>](https://github.com/abdessamadhamzaoui)<br />             | [<img src="https://github.com/ryanjcohen.png" width="100%;"/><br /><sub><b>Ryan</b></sub>](https://github.com/ryanjcohen)<br />             |
+|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 
 ## Changelog
 Click [here](CHANGELOG.md) to view the full changelog.

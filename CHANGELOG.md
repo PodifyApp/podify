@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased](https://github.com/AmineAML/podify/compare)
 
+## [0.0.2](https://github.com/AmineAML/podify/compare/v0.0.1...v0.0.2) - 2020-06-14
+
+### Changed
+- README file sections of features, built with updated and added Ryan to the collaborators
+
+### Fixed
+- README typos
+
 ## [0.0.1](https://github.com/AmineAML/podify/releases/tag/v0.0.1) - 2020-06-11
 
 ### Added
