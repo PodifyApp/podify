@@ -1,0 +1,44 @@
+.Show {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(256, 256, 256, 0.8);
+  }
+   
+  .Show-action {
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 1.05rem;
+    transition: color 0.25s;
+    border: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+  }
+   
+  .Show-action:hover {
+    color: rgba(265, 265, 265, 0.5);
+  }
+   
+  .Show-information {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+   
+  .Show-information h3 {
+    margin-bottom: 0.22rem;
+  }
+   
+  .Show-information p {
+    font-size: 0.83rem;
+    font-weight: 300;
+    color: rgba(256, 256, 256, 0.8);
+  }
+   
+  .Show-information iframe {
+    margin: 0.75rem;
+  }
+
+  .Show-image {
+    padding-top: 4%;
+  }

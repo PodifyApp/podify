@@ -1,0 +1,59 @@
+body,
+html,
+#root {
+  height: 100%;
+  background-color:grey;
+}
+ 
+html {
+  font-size: 18px;
+}
+ 
+h1 {
+  padding: 0.77rem 0;
+  background-color: darkgray;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.88rem;
+  color: #fff;
+  box-shadow: 2px 2px 2px 2px #000000;
+}
+ 
+h1 .highlight {
+  color: rgb(46, 113, 238);
+}
+ 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+ 
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.55rem;
+}
+ 
+.App {
+  height: 100%;
+  padding: 0 12% 10% 12%;
+  background-color: grey;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #fff;
+}
+ 
+.App-playlist {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+ 
+@media only screen and (max-width: 1020px) {
+  .App-playlist {
+    align-items: center;
+    flex-direction: column;
+  }
+}
