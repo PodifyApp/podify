@@ -26,7 +26,7 @@ class App extends React.Component {
     return (
       <div>
         <h1>
-          <a href="http://localhost:3000">Podify</a>
+          <a>Podify</a>
         </h1>
         <div className="App">
           <SearchBar onSearch={this.search} />
