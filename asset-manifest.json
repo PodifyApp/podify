@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/podify/static/css/main.087c6b59.chunk.css",
-    "main.js": "/podify/static/js/main.a64084bb.chunk.js",
-    "main.js.map": "/podify/static/js/main.a64084bb.chunk.js.map",
+    "main.js": "/podify/static/js/main.0cc77370.chunk.js",
+    "main.js.map": "/podify/static/js/main.0cc77370.chunk.js.map",
     "runtime-main.js": "/podify/static/js/runtime-main.f9ba3ae6.js",
     "runtime-main.js.map": "/podify/static/js/runtime-main.f9ba3ae6.js.map",
     "static/js/2.92fa8730.chunk.js": "/podify/static/js/2.92fa8730.chunk.js",
     "static/js/2.92fa8730.chunk.js.map": "/podify/static/js/2.92fa8730.chunk.js.map",
     "index.html": "/podify/index.html",
-    "precache-manifest.5b33962996d724b5bd7cf93179bb1254.js": "/podify/precache-manifest.5b33962996d724b5bd7cf93179bb1254.js",
+    "precache-manifest.0ba71c9fdccd5c02c086f51103b9d49a.js": "/podify/precache-manifest.0ba71c9fdccd5c02c086f51103b9d49a.js",
     "service-worker.js": "/podify/service-worker.js",
     "static/css/main.087c6b59.chunk.css.map": "/podify/static/css/main.087c6b59.chunk.css.map",
     "static/js/2.92fa8730.chunk.js.LICENSE.txt": "/podify/static/js/2.92fa8730.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.f9ba3ae6.js",
     "static/js/2.92fa8730.chunk.js",
     "static/css/main.087c6b59.chunk.css",
-    "static/js/main.a64084bb.chunk.js"
+    "static/js/main.0cc77370.chunk.js"
   ]
 }

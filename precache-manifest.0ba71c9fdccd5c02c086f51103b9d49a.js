@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "15f861ee9d36fafbdfa225fcf453bc63",
+    "revision": "c5e378bc904e8670ff3160c65ba131e9",
     "url": "/podify/index.html"
   },
   {
-    "revision": "5f613c092523cb4143ae",
+    "revision": "a39dda417c1f35fbb54a",
     "url": "/podify/static/css/main.087c6b59.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/podify/static/js/2.92fa8730.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5f613c092523cb4143ae",
-    "url": "/podify/static/js/main.a64084bb.chunk.js"
+    "revision": "a39dda417c1f35fbb54a",
+    "url": "/podify/static/js/main.0cc77370.chunk.js"
   },
   {
     "revision": "2929b171fd902d2dfc2f",
