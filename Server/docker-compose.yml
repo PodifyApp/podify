@@ -1,0 +1,24 @@
+version: '3.8'
+
+services: 
+    db:
+        #user is required using a Linux OS
+        #user: $UID
+        image: mongo
+        ports:
+            - '27017:27017'
+        environment:
+            MONGO_INITDB_ROOT_USERNAME: root
+            MONGO_INITDB_ROOT_PASSWORD: Nt4VzWPtDhkCxESjXVJx
+            MONGO_INITDB_DATABASE: podify
+            MONGO_USERNAME: pody-admin
+            MONGO_PASSWORD: Nt4VzWPtDhkCxESjXVJx
+        volumes:
+            - ./data/db
+            - ./mongo-init.sh:/docker-entrypoint-initdb.d/mongo-init.sh:ro
+
+    cache:
+        image: redis:alpine
+        ports: 
+            - '6379:6379'
+        command: ['--requirepass "Nt4VzWPtDhkCxESjXVJx"']
