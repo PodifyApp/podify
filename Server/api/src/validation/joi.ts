@@ -1,4 +1,4 @@
-import { ObjectSchema } from "@hapi/joi";
+import { ObjectSchema } from "joi";
 import { BadRequest } from "../errors";
 
 //This handles the errors as an example the email's misspled

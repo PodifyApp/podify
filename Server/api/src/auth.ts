@@ -17,7 +17,7 @@ export const logOut = (req: Request, res: Response) => {
             if (err) rejects(err)
 
             //Send a set cookie header which effectively unset the previous cookie
-            res.clearCookie(SESSION_NAME)
+            res.clearCookie(SESSION_NAME).json({ message: 'OK' })
 
             resolve()
         })

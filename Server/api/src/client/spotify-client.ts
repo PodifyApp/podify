@@ -1,7 +1,13 @@
 import axios from 'axios'
+import dotenv from 'dotenv'
 
-const clientId = '93b2775e9c74415fa54369b84bcb0906';
-const clientSecret = '30eeb5cfe7554290923c0d3a3b0daa26';
+dotenv.config()
+
+const {
+    SPOTIFY_CLIENTID,
+    SPOTIFY_CLIENTSECRET
+} = process.env
+
 let access_token: string
 
 const Spotify = {
@@ -20,8 +26,8 @@ const Spotify = {
                   'Content-Type': 'application/x-www-form-urlencoded'
                 },
                 auth: {
-                  username: clientId,
-                  password: clientSecret
+                  username: SPOTIFY_CLIENTID!,
+                  password: SPOTIFY_CLIENTSECRET!
                 }
             }).then(function(response) {
                 //console.log(response);
