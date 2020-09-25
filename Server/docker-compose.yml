@@ -4,18 +4,20 @@ services:
     db:
         #user is required using a Linux OS
         #user: $UID
-        image: mongo
+        image: mysql
+        restart: always
         ports:
-            - '27017:27017'
+            - '3306:3306'
         environment:
-            MONGO_INITDB_ROOT_USERNAME: root
-            MONGO_INITDB_ROOT_PASSWORD: Nt4VzWPtDhkCxESjXVJx
-            MONGO_INITDB_DATABASE: podify
-            MONGO_USERNAME: pody-admin
-            MONGO_PASSWORD: Nt4VzWPtDhkCxESjXVJx
+            MYSQL_DATABASE: podify
+            MYSQL_USER: pody-admin
+            MYSQL_PASSWORD: 3aNz3Ly4pFTNf9bS
+            MYSQL_ROOT_PASSWORD: 3aNz3Ly4pFTNf9bS
+        expose:
+            - 3306
         volumes:
             - ./data/db
-            - ./mongo-init.sh:/docker-entrypoint-initdb.d/mongo-init.sh:ro
+        command: --default-authentication-plugin=mysql_native_password --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
 
     cache:
         image: redis:alpine

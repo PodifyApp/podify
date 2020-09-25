@@ -1,13 +1,14 @@
-import mongoose from 'mongoose'
 import session from 'express-session'
 import connectRedis from 'connect-redis'
 import Redis from 'ioredis'
-import { MONGO_URI, MONGO_OPTIONS, REDIS_OPTIONS, APP_PORT } from './config'
+import { REDIS_OPTIONS, APP_PORT } from './config'
 import { createApp } from './app'
+import "reflect-metadata"
+import { createConnection } from 'typeorm'
 
 ;(async () => {
-    //console.log("Connection url => ", MONGO_URI);
-    await mongoose.connect(MONGO_URI, MONGO_OPTIONS)
+
+    await createConnection()
 
     const RedisStore = connectRedis(session)
 
@@ -17,5 +18,5 @@ import { createApp } from './app'
     
     const app = createApp(store)
 
-    app.listen(APP_PORT, () => console.log(`http://localhost:${APP_PORT}`))
+    app.listen(APP_PORT, () => console.log(`🚀 => http://localhost:${APP_PORT}`))
 })()

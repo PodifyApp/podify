@@ -1,34 +1,48 @@
 import { Router } from 'express'
-import { registerSchema, validate } from '../validation'
-import { User } from '../models'
 import { logIn } from '../auth'
 import { guest, catchAsync } from '../middleware'
 import { BadRequest } from '../errors'
+import { getRepository } from 'typeorm'
+import { User } from '../entity'
+import { validate, ValidationError } from 'class-validator'
 
 
 const router = Router()
 
 //Allow this route to only users with guest role
 router.post('/register', guest, catchAsync(async (req, res) => {
-    await validate(registerSchema, req.body)
+    const userRepository = await getRepository(User)
 
-    const { email, name, password } = req.body
+    const { email, name, password, passwordConfirmation } = req.body
 
-    const found = await User.exists({ email })
+    let newUser = new User()
+    newUser.email = email
+    newUser.name = name
+    newUser.password = password
+    newUser.passwordConfirmation = passwordConfirmation
 
-    if (found) {
-        //Email exist on the database, but to improve security don't directly tell it does, 
-        //that's why indicate a general message of invalid email
-        throw new BadRequest('Invalid email')
-    }
-
-    const user = await User.create({
-        email, name, password
+    await validate(newUser).then(async errors => {
+        if (errors.length > 0) {
+            const err = errors.map((error: ValidationError) => 
+            Object.values(error.constraints!)).join(', ');
+            throw new BadRequest(err);
+        } else {
+            const found = await userRepository.count({ email: email })
+    
+            if (found != 0) {
+                //Email exist on the database, but to improve security don't directly tell it does, 
+                //that's why indicate a general message of invalid email
+                throw new BadRequest('Invalid email')
+            }
+    
+            //Save does create new or update if it already exists, insert does create new
+            const user = await userRepository.save(newUser)
+    
+            logIn(req, user.id.toString())
+    
+            res.json({ message: 'OK' })
+        }
     })
-
-    logIn(req, user.id)
-
-    res.json({ message: 'OK' })
 }))
 
 export default router
